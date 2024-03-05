@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="zad2.MainPage">
+
+    <StackLayout Margin="0, 20, 0, 0">
+        <Label Text="Domek w górach" TextColor="#808080" FontSize="25"/>
+        <Image Source="domek.jpg"/>
+        <Grid BackgroundColor="#008080">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Button Text="Polub" Clicked="polubienie" TextColor="White" BackgroundColor="#008080"/>
+            <Button Text="Usuń" Grid.Column="1" Clicked="depolubienie" TextColor="White" BackgroundColor="#008080"/>
+            <Button Text="Zapisz" Grid.Column="2" TextColor="White" BackgroundColor="#008080"/>
+        </Grid>
+        <Label HorizontalOptions="End" Text="0 polubień" x:Name="result"/>
+        <Line X1="0" X2="400" Stroke="#808080"/>
+        <Label Text="Opis" TextColor="#808080" FontAttributes="Bold"/>
+        <Label TextColor="#808080" Text="Odwiedź komfortowy domek w Sudetach, blisko do szlaków turystycznych"/>
+    </StackLayout>
+
+</ContentPage>
